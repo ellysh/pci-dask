@@ -1,0 +1,1 @@
+KERNEL=="PCI7300BW[0-9]*",  NAME="%k", MODE="0666"

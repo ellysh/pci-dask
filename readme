@@ -1,0 +1,115 @@
+This file describes the installation and configuration for PCIS-DASK Linux Driver
+
+
+STEP 1: UNPACK
+==============
+
+Decompress the package file:
+     tar xvzf [filename].tar.gz
+
+This will extract the 'pci-dask_427' directory with the following
+subdirectories:
+----------------------------------------------------------------------
+drivers/ contains the device modules, configuration file and
+         installation script
+lib/     contains the shared library - libpci_dask.so
+util/    contains the configuration utility and un-installation
+         script
+samples/ contains some sample programs for ADLink DAQ devices
+docs/    documentation
+
+* The drivers are compiled as kernel modules and now work for
+  kernel versions 2.6.32-28-generic
+  ( compiled with gcc version 4.4.3 (Ubuntu 4.4.3-4ubuntu5) )
+
+
+STEP 2: RESERVE MEMORY
+======================
+
+*** Note: If your DO NOT perform any continuous operation, ***
+***       you can skip this section and jump to STEP 3.    ***
+
+For contiguous memory allocation, we reserve memory in higher memory space.
+And to reserve higher memory for drivers, user should pass a command line
+argument to the kernel. User can either use "append=" in /etc/lilo.conf or
+add commandline arguments to the Lilo interactive prompt at boot time.
+If you add "append=" in /etc/lilo.conf, you should execute /sbin/lilo to
+update the setting.
+
+For example, 64MB RAM installed in you box and 4MB reserved memory is needed:
+
+  * if you use LILO as boot loader, you can add "append=" statement to the
+    file "/etc/lilo.conf".
+
+    In lilo.conf:
+    boot=/dev/hda
+    install=/boot/boot.b
+    prompt
+    timeout=50
+    default=linux
+
+    image=/boot/vmlinuz-2.6.xx
+        label=linux
+        read-only
+        root=/dev/hda1
+        append="mem=60M"
+
+  * if you use GRUB as boot loader, you can add "mem=" statement to the file
+    "/etc/grub.conf".
+
+    In grup.conf:
+    deafult=0
+    timeout=10
+    splashimage=(hd0,0)/boot/grub/splash.xpm.gz
+    title SUSE Linux
+        root (hd0,0)
+        kernel /vmlinuz-2.6.xx ro root=/dev/hda1 mem=60M
+
+* If you add "append=" in /etc/lilo.conf, you should execute /sbin/lilo to
+  update the setting.
+
+Or, you can specify the command line arguments to the interactive prompt
+at boot time:
+   * LILO
+    LILO: linux mem=60M
+
+   * GRUB
+    i. Press 'a' to modify the kernel arguments.
+    ii. ro root=/dev/hda1 mem=60M
+
+Please note that MEM setting should not larger than 3072M, due to the 
+limitation of 32bit kernel.
+
+STEP 3: CONFIGURE AND INSTALL DEVICE
+===================================
+
+Because of the PCI-bus architecture, the NuDAQ PCI devices can be detected
+automatically. All user has to do is inserting modules and making nodes for
+the devices.
+
+You can finish these manually, or ultilize the applets we provide.
+
+    pci-dask_427/util/dask_conf           for driver configuration
+    pci-dask_427/drivers/dask_inst.pl     for driver installation
+
+To configure drivers, execute the utility:
+
+   pci-dask_427/util/dask_conf
+
+The detailed description of dask_conf can be found in Chapter 3 of
+User Guide.
+
+To make driver installation, execute the script as follows:
+
+   pci-dask_427/drivers/dask_inst.pl
+
+
+STEP 4: INSTALL LIBRARY
+=======================
+
+The library is provided as a shared library. The library is compatible
+with GLIBC 2.10. To install the library, type the following command:
+
+   cp <InstallDir>/pci-dask_427/lib/libpci_dask.so /usr/lib
+
+In addition, dask_inst.pl also involves the installation for the library.

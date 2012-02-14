@@ -1,0 +1,1 @@
+KERNEL=="PCI9524W*", NAME="%k", MODE="0666", OWNER="root"

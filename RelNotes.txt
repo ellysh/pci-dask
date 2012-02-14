@@ -1,0 +1,1573 @@
+PCIS-DASK/X Release Notes File
+
+=================================================================
+                    Table Of Contents
+=================================================================
+* PCIS-DASK/X 4.27 Release Notes
+  + PCIS-DASK/X 4.27 Hardware Support
+  + Miscellaneous bug fixes
+
+* PCIS-DASK/X 4.26 Release Notes
+  + PCIS-DASK/X 4.26 New Features (versus 4.20)
+  + PCIS-DASK/X 4.26 Hardware Support
+  + PCIS-DASK/X 4.26 New Functions (versus 4.20)
+  + Miscellaneous bug fixes
+  + Miscellaneous
+
+* PCIS-DASK/X 4.20 Release Notes
+  + PCIS-DASK/X 4.20 New Features (versus 4.19)
+  + PCIS-DASK/X 4.20 Hardware Support
+  + PCIS-DASK/X 4.20 New Functions (versus 4.19)
+  + Miscellaneous bug fixes
+  + Miscellaneous
+
+* PCIS-DASK/X 4.19 Release Notes
+  + PCIS-DASK/X 4.19 New Features (versus 4.13.1)
+  + PCIS-DASK/X 4.19 Hardware Support
+  + PCIS-DASK/X 4.19 New Functions (versus 4.13.1)
+  + Miscellaneous bug fixes
+  + Miscellaneous
+
+* PCIS-DASK/X 4.13.1 Release Notes
+  + PCIS-DASK/X 4.13.1 New Features (versus 4.13)
+  + PCIS-DASK/X 4.13.1 Hardware Support
+  + PCIS-DASK/X 4.13.1 New Functions (versus 4.13)
+  + Miscellaneous bug fixes
+  + Miscellaneous
+
+* PCIS-DASK 4.13 Release Notes
+  + PCIS-DASK 4.13 Features (versus 4.12)
+  + PCIS-DASK 4.13 Hardware Support
+
+* PCIS-DASK 4.12 Release Notes
+  + PCIS-DASK 4.12 New Features (versus 4.10)
+  + PCIS-DASK 4.12 Hardware Support
+  + PCIS-DASK 4.12 New Functions (versus 4.10)
+  + Miscellaneous bug fixes
+  + Miscellaneous
+
+* PCIS-DASK/X 4.101 Release Notes
+  + PCIS-DASK/X 4.101 Hardware Support
+  + Miscellaneous bug fixes
+
+* PCIS-DASK/X 4.10 Release Notes
+  + PCIS-DASK/X 4.10 New Features (versus 4.07)
+  + PCIS-DASK/X 4.10 Hardware Support
+  + PCIS-DASK/X 4.10 New Functions
+  + Miscellaneous bug fixes
+
+* PCIS-DASK/X 4.07 Release Notes
+  + PCIS-DASK/X 4.07 New Features (versus 4.02)
+  + PCIS-DASK/X 4.07 Hardware Support
+  + Miscellaneous
+
+* PCIS-DASK/X 4.02 Release Notes
+  + PCIS-DASK/X 4.02 Hardware Support
+  + Miscellaneous bug fixes
+
+* PCIS-DASK/X 4.01 Release Notes
+  + PCIS-DASK/X 4.01 New Features (versus 4.00)
+  + PCIS-DASK/X 4.01 Hardware Support
+  + PCIS-DASK/X 4.01 New Functions
+  + Miscellaneous bug fixes
+  + Miscellaneous
+
+* PCIS-DASK/X 4.00 Release Notes
+  + PCIS-DASK/X 4.00 New Features (versus 3.24)
+  + PCIS-DASK/X 4.00 Hardware Support
+  + PCIS-DASK/X 4.00 New Functions
+  + Miscellaneous bug fixes
+  + Miscellaneous
+
+* PCIS-DASK/X 3.24 Release Notes
+  + PCIS-DASK/X 3.24 New Features (versus 3.23)
+  + PCIS-DASK/X 3.24 Hardware Support
+  + PCIS-DASK/X 3.24 New Functions
+  + Miscellaneous bug fixes
+  + Miscellaneous
+
+* PCIS-DASK/X 3.23 Release Notes
+  + PCIS-DASK/X 3.23 New Features (versus 3.22)
+  + PCIS-DASK/X 3.23 Hardware Support
+  + PCIS-DASK/X 3.23 New Functions
+  + Miscellaneous bug fixes
+
+* PCIS-DASK/X 3.22 Release Notes
+  + PCIS-DASK/X 3.22 New Features (versus 3.21)
+  + PCIS-DASK/X 3.22 Hardware Support
+  + Miscellaneous bug fixes
+  + Miscellaneous
+
+* PCIS-DASK/X 3.21 Release Notes
+  + PCIS-DASK/X 3.21 New Features (versus 3.20)
+  + PCIS-DASK/X 3.21 Hardware Support
+  + Miscellaneous bug fixes
+  + Miscellaneous
+
+* PCIS-DASK/X 3.20 Release Notes
+  + PCIS-DASK/X 3.20 New Features (versus 3.02)
+  + PCIS-DASK/X 3.20 Hardware Support
+  + PCIS-DASK/X 3.20 New Functions
+  + Miscellaneous bug fixes
+  + Miscellaneous
+
+* PCIS-DASK/X 3.02 Release Notes
+  + PCIS-DASK/X 3.02 Hardware Support
+  + Miscellaneous Bug Fixs
+
+* PCIS-DASK/X 3.01 Release Notes
+  + PCIS-DASK/X 3.01 Hardware Support
+  + PCIS-DASK/X 3.01 New Functions
+  + Miscellaneous Bug Fixs
+
+* PCIS-DASK/X 3.00 Release Notes
+  + PCIS-DASK/X 3.00 New Features (versus 2.00)
+  + PCIS-DASK/X 3.00 Hardware Support
+  + PCIS-DASK/X 3.00 New Functions
+  + Miscellaneous Bug Fixs
+
+* PCIS-DASK/X 2.00 Release Notes
+  + PCIS-DASK/X 2.00 New Features (versus 1.00)
+  + PCIS-DASK/X 2.00 Hardware Support
+  + PCIS-DASK/X 2.00 New Functions
+  + Miscellaneous
+
++ Acknowledgements
+
+-----------------------------------------------------------------
+     PCIS-DASK/X 4.27 Release Notes
+-----------------------------------------------------------------
+
+**** PCIS-DASK 4.27 Hardware Support ****
+
+ * PCI-6202
+ * PCI-6208A
+ * PCI-6208V/16V
+ * PCI-6308A
+ * PCI-6308V
+ * PCI-7200/cPCI-7200
+ * PCI-7230/cPCI-7230
+ * PCI-7233/PCI-7233H
+ * PCI-7234
+ * PCI-7248/cPCI-7248/PCI-7224
+ * cPCI-7249R
+ * PCI-7250
+ * cPCI-7252
+ * PCI-7256
+ * PCI-7258
+ * PCI-7260
+ * PCI-7296
+ * PCI-7300A/cPCI-7300A
+ * PCIe-7350
+ * PCI-7396/PCI-7348
+ * PCI-7432/cPCI-7432/cPCI-7432R
+ * PCI-7433/cPCI-7433/cPCI-7433R
+ * PCI-7434/cPCI-7434/cPCI-7434R
+ * PCI-7442/PCI-7443/PCI-7444
+ * cPCI-7452
+ * PCI-8554
+ * PCI-9111
+ * PCI-9112/cPCI-9112
+ * PCI-9113
+ * PCI-9114/PCI-9114A
+ * cPCI-9116
+ * PCI-9118
+ * PCI-9221
+ * PCI-9222
+ * PCI-9223
+ * PCI-9524
+ * PCI-9812/10
+
+**** Miscellaneous bug fixes ****
+ * Fix a bug of PCI-7350 buffer allocation.
+
+-----------------------------------------------------------------
+     PCIS-DASK/X 4.26 Release Notes
+-----------------------------------------------------------------
+
+**** PCIS-DASK 4.26 New Features (versus 4.20) ****
+
+The following new features are supported in PCIS-DASK 4.26 :
+
+ * Driver for new NuDAQ card, PCIe-7350, PCI-9222,
+   PCI-9223, PCI-9524 supports
+ * Add support for udev.
+
+**** PCIS-DASK 4.26 Hardware Support ****
+
+ * PCI-6202
+ * PCI-6208A
+ * PCI-6208V/16V
+ * PCI-6308A
+ * PCI-6308V
+ * PCI-7200/cPCI-7200
+ * PCI-7230/cPCI-7230
+ * PCI-7233/PCI-7233H
+ * PCI-7234
+ * PCI-7248/cPCI-7248/PCI-7224
+ * cPCI-7249R
+ * PCI-7250
+ * cPCI-7252
+ * PCI-7256
+ * PCI-7258
+ * PCI-7260
+ * PCI-7296
+ * PCI-7300A/cPCI-7300A
+ * PCIe-7350
+ * PCI-7396/PCI-7348
+ * PCI-7432/cPCI-7432/cPCI-7432R
+ * PCI-7433/cPCI-7433/cPCI-7433R
+ * PCI-7434/cPCI-7434/cPCI-7434R
+ * PCI-7442/PCI-7443/PCI-7444
+ * cPCI-7452
+ * PCI-8554
+ * PCI-9111
+ * PCI-9112/cPCI-9112
+ * PCI-9113
+ * PCI-9114/PCI-9114A
+ * cPCI-9116
+ * PCI-9118
+ * PCI-9221
+ * PCI-9222
+ * PCI-9223
+ * PCI-9524
+ * PCI-9812/10
+
+**** PCIS-DASK 4.26 New Functions ****
+
+The following new functions are added to PCIS-DASK 4.26
+
+ * AI_9222_Config
+ * AI_9222_CounterInterval
+ * AI_9223_Config
+ * AI_9223_CounterInterval
+ * AI_9524_Config
+ * AI_9524_PollConfig
+ * AI_9524_SetDSP
+ * AI_AsyncReTrigNextReady
+ * AI_ReadChannel32
+ * AI_ScanReadChannels32
+ * AI_VoltScale32
+ * AO_9222_Config
+ * AO_9223_Config
+ * AO_ContBufferCompose
+ * AO_ContStatus
+ * AO_InitialMemoryAllocated
+ * DI_9222_Config
+ * DI_9223_Config
+ * DI_7350_Config
+ * DI_7350_TrigHSConfig
+ * DI_7350_ExtSampCLKConfig
+ * DI_7350_ExportSampCLKConfig
+ * DI_7350_SoftTriggerGen
+ * DI_AsyncDblBufferHandled
+ * DI_AsyncDblBufferToFile
+ * DI_AsyncMultiBuffersHandled
+ * DI_AsyncReTrigNextReady
+ * DI_ContBufferReset
+ * DI_ContBufferSetup
+ * DI_SetTimeOut
+ * DO_9222_Config
+ * DO_9222_Config
+ * DO_7350_Config
+ * DO_7350_TrigHSConfig
+ * DO_7350_ExtSampCLKConfig
+ * DO_7350_ExportSampCLKConfig
+ * DO_7350_SoftTriggerGen
+ * DO_ContBufferReset
+ * DO_ContBufferSetup
+ * DO_SetTimeOut
+ * DIO_7350_AFIConfig
+ * DIO_GetPMLatchData32
+ * DIO_PMConfig
+ * DIO_PMControl
+ * DIO_VoltLevelConfig
+ * GetActualRate_9524
+ * GPTC_9524_PG_Config
+ * I2C_Setup
+ * I2C_Control
+ * I2C_Status
+ * I2C_Read
+ * I2C_Write
+ * SPI_Setup
+ * SPI_Control
+ * SPI_Status
+ * SPI_Read
+ * SPI_Write
+ * PCI9524_Acquire_AD_CalConst
+ * PCI9524_Acquire_DA_CalConst
+
+**** Miscellaneous bug fixes ****
+
+ * Fix PCI-6202 ISO/TTL DIO channel logic level issue.
+ * Fix a bug about PCI-6202 AO External Trigger.
+ * Fix a bug about PCI-6202 Multi-Channel AO.
+ * Fix a bug about PCI-6202 buffer reset with Auto buffer reset mode.
+ * Fix a bug of PCI-9114 IoTimer routine.
+ * Fix PCI-9221 AO output latancy issue.
+
+**** Miscellaneous ****
+
+ * Extend the decimal accuracy of covert data of
+   Data File Converter Utility.
+
+-----------------------------------------------------------------
+     PCIS-DASK/X 4.20 Release Notes
+-----------------------------------------------------------------
+
+**** PCIS-DASK 4.20 New Features (versus 4.19) ****
+
+The following new features are supported in PCIS-DASK 4.20 :
+
+ * Driver for new NuDAQ card, PCI-6202 supports
+
+**** PCIS-DASK 4.20 Hardware Support ****
+
+ * PCI-6202
+ * PCI-6208A
+ * PCI-6208V/16V
+ * PCI-6308A
+ * PCI-6308V
+ * PCI-7200/cPCI-7200
+ * PCI-7230/cPCI-7230
+ * PCI-7233/PCI-7233H
+ * PCI-7234
+ * PCI-7248/cPCI-7248/PCI-7224
+ * cPCI-7249R
+ * PCI-7250
+ * cPCI-7252
+ * PCI-7256
+ * PCI-7258
+ * PCI-7260
+ * PCI-7296
+ * PCI-7300A/cPCI-7300A
+ * PCI-7396/PCI-7348
+ * PCI-7432/cPCI-7432/cPCI-7432R
+ * PCI-7433/cPCI-7433/cPCI-7433R
+ * PCI-7434/cPCI-7434/cPCI-7434R
+ * PCI-7442/PCI-7443/PCI-7444
+ * cPCI-7452
+ * PCI-8554
+ * PCI-9111
+ * PCI-9112/cPCI-9112
+ * PCI-9113
+ * PCI-9114/PCI-9114A
+ * cPCI-9116
+ * PCI-9118
+ * PCI-9221
+ * PCI-9812/10
+
+**** PCIS-DASK 4.20 New Functions ****
+
+The following new functions are added to PCIS-DASK 4.20
+
+ * AO_6202_Config
+ * AO_AsyncCheck
+ * AO_AsyncClear
+ * AO_AsyncDblBufferMode
+ * AO_AsyncDblBufferHalfReady
+ * AO_ContBufferReset
+ * AO_ContBufferSetup
+ * AO_ContWriteChannel
+ * AO_ContWriteMultiChannels
+ * AO_SetTimeOut
+ * GPTC_EventSetup
+ * SSI_SourceConn
+ * SSI_SourceDisConn
+ * SSI_SourceClear
+ * PWM_Output
+ * PWM_Stop
+
+**** Miscellaneous bug fixes ****
+
+ * Fix a bug that the AI acquisition of PCI-9114 does not been
+   stopped while performing continuous DMA AI with Sigle Buffer mode.
+
+ * Fix a bug about PCI-9221 pulse generation with external timebase.
+
+ * Fix the external digital trigger delay issue of PCI-9812.
+
+ * Fix synchronous issues of PCI-7200 and PCI-7300A_RevB.
+
+ * Recover a bug of PCI-7248 firmware initialization.
+
+ * Fix a bug that DI_AsyncMultiBufferNextReady() of PCI-7300A
+   may crash system in SMP system due to re-request spinlock.
+
+**** Miscellaneous ****
+
+ * Add AI timeout mechanism for PCI-9xxx series.
+
+ * Rewrite PCI-7300 driver, and the adl_mem_mgr module does not
+   be needed while inserting PCI-7300 module.
+
+ * Reduce PCI-9221 AO latancy.
+
+-----------------------------------------------------------------
+     PCIS-DASK/X 4.19 Release Notes
+-----------------------------------------------------------------
+
+**** PCIS-DASK 4.19 New Features (versus 4.13.1) ****
+
+The following new features are supported in PCIS-DASK 4.19 :
+
+ * Driver for new NuDAQ card, PCI-7443, PCI-7444, PCI-9221 supports
+
+**** PCIS-DASK 4.19 Hardware Support ****
+
+ * PCI-6208A
+ * PCI-6208V/16V
+ * PCI-6308A
+ * PCI-6308V
+ * PCI-7200/cPCI-7200
+ * PCI-7230/cPCI-7230
+ * PCI-7233/PCI-7233H
+ * PCI-7234
+ * PCI-7248/cPCI-7248/PCI-7224
+ * cPCI-7249R
+ * PCI-7250
+ * cPCI-7252
+ * PCI-7256
+ * PCI-7258
+ * PCI-7260
+ * PCI-7296
+ * PCI-7300A/cPCI-7300A
+ * PCI-7396/PCI-7348
+ * PCI-7432/cPCI-7432/cPCI-7432R
+ * PCI-7433/cPCI-7433/cPCI-7433R
+ * PCI-7434/cPCI-7434/cPCI-7434R
+ * PCI-7442/PCI-7443/PCI-7444
+ * cPCI-7452
+ * PCI-8554
+ * PCI-9111
+ * PCI-9112/cPCI-9112
+ * PCI-9113
+ * PCI-9114/PCI-9114A
+ * cPCI-9116
+ * PCI-9118
+ * PCI-9221
+ * PCI-9812/10
+
+**** PCIS-DASK 4.19 New Functions ****
+
+The following new functions are added to PCIS-DASK 4.19
+
+ * DI_AsyncMultiBuffersHandled
+ * AI_9221_Config
+ * AI_9221_CounterInterval
+ * AI_ScanReadChannels
+ * AI_ReadMultiChannels
+ * AI_ContBufferSetup
+ * AI_ContBufferReset
+ * AI_SetTimeOut
+ * PCI_DB_Auto_Calibration_ALL
+ * PCI_Load_CAL_Data
+ * PCI_EEPROM_CAL_Constant_Update
+ * AI_AsyncDblBufferToFile
+ * AI_AsyncDblBufferHandled
+ * GPTC_Read
+ * GPTC_Status
+ * GPTC_Clear
+ * GPTC_Setup
+ * GPTC_Control
+ * CTR_Status
+
+**** Miscellaneous bug fixes ****
+
+ * Issuse with failing to initialize pci6308 modules.(kernel 2.6)
+
+ * Fixed the problem that the board id of pci7442 and pci7452 can
+   not be read correctly.(kernel 2.6)
+
+**** Miscellaneous ****
+
+ * One additional function, CTR_Status is added to read back the
+   status of an indicated timer/counter.
+
+ * For PCI-7300b, number of DI multi-buffer is extended from 8 to 64.
+
+ * In the previous version, the reserved memory is limited around
+   896m. The restriction is removed in this version.
+
+-----------------------------------------------------------------
+     PCIS-DASK/X 4.13.1 Release Notes
+-----------------------------------------------------------------
+
+**** PCIS-DASK 4.13.1 New Features (versus 4.13) ****
+
+The following new features are supported in PCIS-DASK 4.13.1 :
+
+ * Driver for new NuDAQ card, PCI-7442 supports
+
+**** PCIS-DASK 4.13.1 Hardware Support ****
+
+ * PCI-6208A
+ * PCI-6208V/16V
+ * PCI-6308A
+ * PCI-6308V
+ * PCI-7200/cPCI-7200
+ * PCI-7230/cPCI-7230
+ * PCI-7233/PCI-7233H
+ * PCI-7234
+ * PCI-7248/cPCI-7248/PCI-7224
+ * cPCI-7249R
+ * PCI-7250
+ * cPCI-7252
+ * PCI-7256
+ * PCI-7258
+ * PCI-7260
+ * PCI-7296
+ * PCI-7300A/cPCI-7300A
+ * PCI-7396/PCI-7348
+ * PCI-7432/cPCI-7432/cPCI-7432R
+ * PCI-7433/cPCI-7433/cPCI-7433R
+ * PCI-7434/cPCI-7434/cPCI-7434R
+ * PCI-7442
+ * cPCI-7452
+ * PCI-8554
+ * PCI-9111
+ * PCI-9112/cPCI-9112
+ * PCI-9113
+ * PCI-9114/PCI-9114A
+ * cPCI-9116
+ * PCI-9118
+ * PCI-9812/10
+
+**** PCIS-DASK 4.13.1 New Functions ****
+
+The following new functions are added to PCIS-DASK 4.13.1
+
+ * DO_SimuWritePort
+ * DIO_LineConfig
+ * DIO_LinesConfig
+ * HotResetHoldControl
+ * HotResetHoldStatus
+ * SetInitPattern
+ * WDT_Reload
+ * DI_AsyncMultiBuffersHandled
+
+**** Miscellaneous Bug Fixs ****
+
+* The driver of cpci-9116 was missing in earier version of PCIS-DASK
+  for Fedora Core 5.
+
+**** Miscellaneous ****
+
+* One additional function, DI_AsyncMultiBuffersHandled is added to check
+  multi-buffer overrun status. Using this function, user can specified
+  the buffer ids that have been handled by the application.
+
+-----------------------------------------------------------------
+     PCIS-DASK 4.13 Release Notes
+-----------------------------------------------------------------
+
+**** PCIS-DASK 4.13 New Features (versus 4.12) ****
+
+The following new features are supported in PCIS-DASK 4.13 :
+
+ *  Non-root processes are allowed to allocate more memory than
+   the current RLIMIT_MEMLOCK resource limit for PCI-7300A_RevB.
+
+**** PCIS-DASK 4.13 Hardware Support ****
+
+PCIS-DASK 4.13 Windows 2000/NT/98 version :
+ * PCI-6208A
+ * PCI-6208V/16V
+ * PCI-6308A
+ * PCI-6308V
+ * PCI-7200/cPCI-7200
+ * PCI-7230/cPCI-7230
+ * PCI-7233/PCI-7233H
+ * PCI-7234
+ * PCI-7248/cPCI-7248/PCI-7224
+ * cPCI-7249R
+ * PCI-7250
+ * cPCI-7252
+ * PCI-7256
+ * PCI-7258
+ * PCI-7260
+ * PCI-7296
+ * PCI-7300A/cPCI-7300A
+ * PCI-7396/PCI-7348
+ * PCI-7432/cPCI-7432/cPCI-7432R
+ * PCI-7433/cPCI-7433/cPCI-7433R
+ * PCI-7434/cPCI-7434/cPCI-7434R
+ * cPCI-7452
+ * PCI-8554
+ * PCI-9111
+ * PCI-9112/cPCI-9112
+ * PCI-9113
+ * PCI-9114/PCI-9114A
+ * cPCI-9116
+ * PCI-9118
+ * PCI-9812/10
+
+-----------------------------------------------------------------
+     PCIS-DASK 4.12 Release Notes
+-----------------------------------------------------------------
+
+**** PCIS-DASK 4.11 New Features (versus 4.10) ****
+
+The following new features are supported in PCIS-DASK 4.12 :
+
+ * Driver for new NuDAQ card, cPCI-7452 supports
+
+**** PCIS-DASK 4.12 Hardware Support ****
+
+PCIS-DASK 4.12 Windows 2000/NT/98 version :
+ * PCI-6208A
+ * PCI-6208V/16V
+ * PCI-6308A
+ * PCI-6308V
+ * PCI-7200/cPCI-7200
+ * PCI-7230/cPCI-7230
+ * PCI-7233/PCI-7233H
+ * PCI-7234
+ * PCI-7248/cPCI-7248/PCI-7224
+ * cPCI-7249R
+ * PCI-7250
+ * cPCI-7252
+ * PCI-7256
+ * PCI-7258
+ * PCI-7260
+ * PCI-7296
+ * PCI-7300A/cPCI-7300A
+ * PCI-7396/PCI-7348
+ * PCI-7432/cPCI-7432/cPCI-7432R
+ * PCI-7433/cPCI-7433/cPCI-7433R
+ * PCI-7434/cPCI-7434/cPCI-7434R
+ * cPCI-7452
+ * PCI-8554
+ * PCI-9111
+ * PCI-9112/cPCI-9112
+ * PCI-9113
+ * PCI-9114/PCI-9114A
+ * cPCI-9116
+ * PCI-9118
+ * PCI-9812/10
+
+**** PCIS-DASK 4.12 New Functions ****
+
+The following new functions are added to PCIS-DASK 4.12
+
+ * DIO_INT_Event_Message
+ * DIO_SetCOSInterrupt32
+ * DIO_GetCOSLatchDataInt32
+
+**** Miscellaneous bug fixes ****
+
+* Issuse with failing to load pci-7224 driver in window 2000/XP.
+
+
+**** Miscellaneous ****
+
+* The AD channel number can be extended to 255 (for external AD channels)
+  for PCI-9118 series boards.
+
+-----------------------------------------------------------------
+     PCIS-DASK 4.101 Release Notes
+-----------------------------------------------------------------
+
+**** PCIS-DASK 4.101 Hardware Support ****
+
+ * PCI-6208A
+ * PCI-6208V/16V
+ * PCI-6308A
+ * PCI-6308V
+ * PCI-7200/cPCI-7200
+ * PCI-7230/cPCI-7230
+ * PCI-7233/PCI-7233H
+ * PCI-7234
+ * PCI-7248/cPCI-7248/PCI-7224
+ * cPCI-7249R
+ * PCI-7250
+ * cPCI-7252
+ * PCI-7256
+ * PCI-7258
+ * PCI-7260
+ * PCI-7296
+ * PCI-7300A/cPCI-7300A
+ * PCI-7396/PCI-7348
+ * PCI-7432/cPCI-7432/cPCI-7432R
+ * PCI-7433/cPCI-7433/cPCI-7433R
+ * PCI-7434/cPCI-7434/cPCI-7434R
+ * PCI-8554
+ * PCI-9111
+ * PCI-9112/cPCI-9112
+ * PCI-9113
+ * PCI-9114/PCI-9114A
+ * cPCI-9116
+ * PCI-9118
+ * PCI-9812/10
+
+**** Miscellaneous bug fixes ****
+
+* Issuse with failing to load cpci7252 modules (with "undefined symbol"
+  error).
+
+-----------------------------------------------------------------
+     PCIS-DASK 4.10 Release Notes
+-----------------------------------------------------------------
+**** PCIS-DASK 4.10 New Features (versus 4.07) ****
+
+The following new features are supported in PCIS-DASK 4.10 :
+
+ * Driver for new NuDAQ card, PCI-7260 supports
+
+**** PCIS-DASK 4.10 Hardware Support ****
+
+ * PCI-6208A
+ * PCI-6208V/16V
+ * PCI-6308A
+ * PCI-6308V
+ * PCI-7200/cPCI-7200
+ * PCI-7230/cPCI-7230
+ * PCI-7233/PCI-7233H
+ * PCI-7234
+ * PCI-7248/cPCI-7248/PCI-7224
+ * cPCI-7249R
+ * PCI-7250
+ * cPCI-7252
+ * PCI-7256
+ * PCI-7258
+ * PCI-7260
+ * PCI-7296
+ * PCI-7300A/cPCI-7300A
+ * PCI-7396/PCI-7348
+ * PCI-7432/cPCI-7432/cPCI-7432R
+ * PCI-7433/cPCI-7433/cPCI-7433R
+ * PCI-7434/cPCI-7434/cPCI-7434R
+ * PCI-8554
+ * PCI-9111
+ * PCI-9112/cPCI-9112
+ * PCI-9113
+ * PCI-9114/PCI-9114A
+ * cPCI-9116
+ * PCI-9118
+ * PCI-9812/10
+
+**** PCIS-DASK 4.10 New Functions ****
+
+The following new functions are added to PCIS-DASK 4.10
+
+ * GetCardIndexFromID
+ * EMGShutDownControl
+ * EMGShutDownStatus
+ * GetInitPattern
+ * IdentifyLED_Control
+ * WDT_Setup
+ * WDT_Control
+ * AI_AsyncDblBufferOverrun
+ * DI_AsyncDblBufferOverrun
+ * WDT_Status
+
+**** Miscellaneous bug fixes ****
+
+* Issuse with wrong data for uni-polar mode of continuous analog input
+  of PCI-9118HR.
+
+
+-----------------------------------------------------------------
+     PCIS-DASK 4.07 Release Notes
+-----------------------------------------------------------------
+**** PCIS-DASK 4.07 New Features (versus 4.02) ****
+
+The following new features are supported in PCIS-DASK 4.07 :
+
+ * Continuous DI Signals delivery mechanism is now implemented for
+   for asynchronous DI data acquisition of PCI-7300A_RevB.
+ * The overrun status of Multiple buffered data acquisition can be
+   got by the function "DI_AsyncDblBufferOverrun" for PCI-7300A_RevB.
+
+**** PCIS-DASK 4.07 Hardware Support ****
+
+ * PCI-6208A
+ * PCI-6208V/16V
+ * PCI-6308A
+ * PCI-6308V
+ * PCI-7200/cPCI-7200
+ * PCI-7230/cPCI-7230
+ * PCI-7233/PCI-7233H
+ * PCI-7234
+ * PCI-7248/cPCI-7248/PCI-7224
+ * cPCI-7249R
+ * PCI-7250
+ * cPCI-7252
+ * PCI-7256
+ * PCI-7258
+ * PCI-7296
+ * PCI-7300A/cPCI-7300A
+ * PCI-7396/PCI-7348
+ * PCI-7432/cPCI-7432/cPCI-7432R
+ * PCI-7433/cPCI-7433/cPCI-7433R
+ * PCI-7434/cPCI-7434/cPCI-7434R
+ * PCI-8554
+ * PCI-9111
+ * PCI-9112/cPCI-9112
+ * PCI-9113
+ * PCI-9114/PCI-9114A
+ * cPCI-9116
+ * PCI-9118
+ * PCI-9812/10
+
+**** Miscellaneous ****
+
+* For PCI-7300A_RevB, DI_AsyncDblBufferTransfer doesn't perform memory
+  transfer but notifies pci-dask library the data stored in buffer have
+  been handled.
+* It is now fixed that the LED light can't be set for PCI-7433
+  and PCI-7434
+
+-----------------------------------------------------------------
+     PCIS-DASK/X 4.02 Release Notes
+-----------------------------------------------------------------
+**** PCIS-DASK/X 4.02 Hardware Support ****
+
+ * PCI-6208A
+ * PCI-6208V/16V
+ * PCI-6308A
+ * PCI-6308V
+ * PCI-7200/cPCI-7200
+ * PCI-7230/cPCI-7230
+ * PCI-7233/PCI-7233H
+ * PCI-7234
+ * PCI-7248/cPCI-7248/PCI-7224
+ * cPCI-7249R
+ * PCI-7250
+ * cPCI-7252
+ * PCI-7256
+ * PCI-7258
+ * PCI-7296
+ * PCI-7300A/cPCI-7300A
+ * PCI-7396/PCI-7348
+ * PCI-7432/cPCI-7432/cPCI-7432R
+ * PCI-7433/cPCI-7433/cPCI-7433R
+ * PCI-7434/cPCI-7434/cPCI-7434R
+ * PCI-8554
+ * PCI-9111
+ * PCI-9112/cPCI-9112
+ * PCI-9113
+ * PCI-9114/PCI-9114A
+ * cPCI-9116
+ * PCI-9118
+ * PCI-9812/10
+
+**** Miscellaneous bug fixes ****
+
+* The wrong data problem for uni-polar mode of continuous analog input
+  of PCI-9118HR is now fixed.
+* It is now fixed that the DO_WriteLine doesn't work for PCI-9111DG/HG
+
+-----------------------------------------------------------------
+     PCIS-DASK 4.01 Release Notes
+-----------------------------------------------------------------
+**** PCIS-DASK 4.01 New Features (versus 4.0) ****
+
+The following new features are supported in PCIS-DASK 4.01 :
+
+ * Post trigger mode of continuous AI are now supported for PCI-9111DG/HR
+   with hardware version B1 or larger. Please refer to the PCIS-DASK
+   function reference manual for the details.
+ * A new function "CTR_Update", which writes initial count to the selected
+   counter without affecting the counter's programmed mode, is now supported
+   for the NuDAQ devices that have onboard 82C54 timer/counters.
+
+**** PCIS-DASK 4.01 Hardware Support ****
+
+ * PCI-6208A
+ * PCI-6208V/16V
+ * PCI-6308A
+ * PCI-6308V
+ * PCI-7200/cPCI-7200
+ * PCI-7230/cPCI-7230
+ * PCI-7233/PCI-7233H
+ * PCI-7234
+ * PCI-7248/cPCI-7248/PCI-7224
+ * cPCI-7249R
+ * PCI-7250
+ * cPCI-7252
+ * PCI-7256
+ * PCI-7258
+ * PCI-7296
+ * PCI-7300A/cPCI-7300A
+ * PCI-7396/PCI-7348
+ * PCI-7432/cPCI-7432/cPCI-7432R
+ * PCI-7433/cPCI-7433/cPCI-7433R
+ * PCI-7434/cPCI-7434/cPCI-7434R
+ * PCI-8554
+ * PCI-9111
+ * PCI-9112/cPCI-9112
+ * PCI-9113
+ * PCI-9114/PCI-9114A
+ * cPCI-9116
+ * PCI-9118
+ * PCI-9812/10
+
+**** PCIS-DASK 4.01 New Functions ****
+The following new functions are added to PCIS-DASK 4.01
+
+ * CTR_Update
+
+**** Miscellaneous bug fixes ****
+ * To fix the PCI-7300A's memory un-mapping bug while unloading the devices modules
+
+
+**** Miscellaneous ****
+
+ * The time delay between that the hardware stops AI and that software gets the AI complete
+   message for pre-triggered mode of PCI-9111 (checking by AI_AsyncCheck), is now decreased.
+
+
+-----------------------------------------------------------------
+     PCIS-DASK/X 4.00 Release Notes
+-----------------------------------------------------------------
+
+**** PCIS-DASK/X 4.00 New Features (versus 3.24) ****
+
+The following new features are supported in PCIS-DASK 4.00 :
+
+ * The overrun status of double buffered data acquisition
+   can be got by the function "AI_AsyncDblBufferOverrun" or
+   "DI_AsyncDblBufferOverrun".
+ * The mapped address of driver buffer can bo got by the
+   function AI_GetView/DI_GetView/DO_GetView.
+ * The fucntion DO_ReadLine, DO_ReadPort and DO_WritePort are
+   now supported for all of NuDAQ devices containing digital
+   output ports.
+ * Driver for new NuDAQ card, PCI-7258 supports.
+
+**** PCIS-DASK/X 4.00 Hardware Support ****
+
+PCIS-DASK 4.00 Linux version :
+ * PCI-6208A
+ * PCI-6208V/16V
+ * PCI-6308A
+ * PCI-6308V
+ * PCI-7200/cPCI-7200
+ * PCI-7230/cPCI-7230
+ * PCI-7233/PCI-7233H
+ * PCI-7234
+ * PCI-7248/cPCI-7248
+ * cPCI-7249R
+ * PCI-7250
+ * cPCI-7252
+ * PCI-7256
+ * PCI-7258
+ * PCI-7296
+ * PCI-7300A/cPCI-7300A
+ * PCI-7396/PCI-7348
+ * PCI-7432/cPCI-7432/cPCI-7432R
+ * PCI-7433/cPCI-7433/cPCI-7433R
+ * PCI-7434/cPCI-7434/cPCI-7434R
+ * PCI-8554
+ * PCI-9111
+ * PCI-9112/cPCI-9112
+ * PCI-9113
+ * PCI-9114
+ * cPCI-9116
+ * PCI-9118
+ * PCI-9812/10
+
+**** PCIS-DASK/X 4.00 New Functions ****
+The following new functions are added to PCIS-DASK 3.24
+
+ * GetCardType
+ * GetBaseAddr
+ * GetLCRAddr
+ * AI_9812_SetDiv
+ * AI_AsyncDblBufferOverrun
+ * DI_AsyncDblBufferOverrun
+ * AI_GetView
+ * DI_GetView
+ * DO_GetView
+
+**** Miscellaneous bug fixes ****
+ * To be ASNI C compatible, change the structure assigment to memory copying.
+
+**** Miscellaneous ****
+ * The card index assignment had been added into the configuration utility for
+   PCI-7258
+
+ * The card index parsing had been added into the installation script for
+   PCI-7258
+
+-----------------------------------------------------------------
+     PCIS-DASK/X 3.24 Release Notes
+-----------------------------------------------------------------
+
+**** PCIS-DASK/X 3.24 New Features (versus 3.23) ****
+
+The following new features are supported in PCIS-DASK 3.24 :
+
+ * Device module for new NuDAQ card, PCI-7256, support
+ * Pre-trigger and external strobe mode of continuous AI are now
+   supported for PCI-9114A
+
+**** PCIS-DASK/X 3.24 Hardware Support ****
+
+PCIS-DASK 3.24 Linux version :
+ * PCI-6208A
+ * PCI-6208V/16V
+ * PCI-6308A
+ * PCI-6308V
+ * PCI-7200/cPCI-7200
+ * PCI-7230/cPCI-7230
+ * PCI-7233/PCI-7233H
+ * PCI-7234
+ * PCI-7248/cPCI-7248
+ * cPCI-7249R
+ * PCI-7250
+ * cPCI-7252
+ * PCI-7256
+ * PCI-7296
+ * PCI-7300A/cPCI-7300A
+ * PCI-7396/PCI-7348
+ * PCI-7432/cPCI-7432/cPCI-7432R
+ * PCI-7433/cPCI-7433/cPCI-7433R
+ * PCI-7434/cPCI-7434/cPCI-7434R
+ * PCI-8554
+ * PCI-9111
+ * PCI-9112/cPCI-9112
+ * PCI-9113
+ * PCI-9114
+ * cPCI-9116
+ * PCI-9118
+ * PCI-9812/10
+
+**** PCIS-DASK/X 3.24 New Functions ****
+The following new functions are added to PCIS-DASK 3.24
+
+ * AI_9114_PreTrigConfig
+
+**** Miscellaneous bug fixes ****
+ * The symbol confusion while the programes using both PCIS-DASK and D2K_DASK
+   , is now fixed.
+
+
+**** Miscellaneous ****
+ * The card index assignment had been added into the configuration utility for
+   PCI-7256
+
+ * The card index parsing had been added into the installation script for
+   PCI-7256
+
+-----------------------------------------------------------------
+     PCIS-DASK/X 3.23 Release Notes
+-----------------------------------------------------------------
+
+**** PCIS-DASK/X 3.23 New Features (versus 3.22) ****
+
+The following new features are supported in PCIS-DASK 3.23 :
+
+ * Multi-Buffered mode of continuous DO is now supported for
+   PCI-7300A/cPCI7300A Rev.B
+
+**** PCIS-DASK/X 3.23 Hardware Support ****
+
+PCIS-DASK 3.23 Linux version :
+ * PCI-6208A
+ * PCI-6208V/16V
+ * PCI-6308A
+ * PCI-6308V
+ * PCI-7200/cPCI-7200
+ * PCI-7230/cPCI-7230
+ * PCI-7233/PCI-7233H
+ * PCI-7234
+ * PCI-7248/cPCI-7248
+ * cPCI-7249R
+ * PCI-7250
+ * cPCI-7252
+ * PCI-7296
+ * PCI-7300A/cPCI-7300A
+ * PCI-7396/PCI-7348
+ * PCI-7432/cPCI-7432/cPCI-7432R
+ * PCI-7433/cPCI-7433/cPCI-7433R
+ * PCI-7434/cPCI-7434/cPCI-7434R
+ * PCI-8554
+ * PCI-9111
+ * PCI-9112/cPCI-9112
+ * PCI-9113
+ * PCI-9114
+ * cPCI-9116
+ * PCI-9118
+ * PCI-9812/10
+
+**** PCIS-DASK/X 3.23 New Functions ****
+The following new functions are added to PCIS-DASK 3.23
+
+  1. Asynchronous Multi-buffered Continuous Digital Output Functions
+     * DO_ContMultiBufferSetup
+     * DO_ContMultiBufferStart
+     * DO_AsyncMultiBufferNextReady
+
+**** Miscellaneous bug fixes ****
+ * The problem that DI/DO control signal's polarity of PCI-7300A Rev.B cannot
+   set as you wish by DI_7300B_Config/DO_7300B_Config, is now fixed.
+
+ * The problem that I_REQ Polarity of PCI-7200 cannot set as falling edge
+   active by DI_7200_Config, is now fixed.
+
+ * The problem that the AI data returned by AI_ReadChannel for PCI9111 is
+   delayed, is now fixed.
+
+
+-----------------------------------------------------------------
+     PCIS-DASK/X 3.22 Release Notes
+-----------------------------------------------------------------
+
+**** PCIS-DASK/X 3.22 New Features (versus 3.21) ****
+
+The following new features are supported in PCIS-DASK/X 3.22 :
+
+ * Kernel 2.4.9 device modules supported
+
+**** PCIS-DASK/X 3.22 Hardware Support ****
+
+PCIS-DASK 3.22 Linux version :
+ * PCI-6208A
+ * PCI-6208V/16V
+ * PCI-6308A
+ * PCI-6308V
+ * PCI-7200/cPCI-7200
+ * PCI-7230/cPCI-7230
+ * PCI-7233/PCI-7233H
+ * PCI-7234
+ * PCI-7248/cPCI-7248
+ * cPCI-7249R
+ * PCI-7250
+ * cPCI-7252
+ * PCI-7296
+ * PCI-7300A/cPCI-7300A
+ * PCI-7396/PCI-7348
+ * PCI-7432/cPCI-7432/cPCI-7432R
+ * PCI-7433/cPCI-7433/cPCI-7433R
+ * PCI-7434/cPCI-7434/cPCI-7434R
+ * PCI-8554
+ * PCI-9111
+ * PCI-9112/cPCI-9112
+ * PCI-9113
+ * PCI-9114
+ * cPCI-9116
+ * PCI-9118
+ * PCI-9812/10
+
+**** Miscellaneous bug fixes ****
+ * For PCI-7396, fix the bug of CTR_Setup( ) function
+
+ * Fix imcompatible data structure problem for PCI-7200 and PCI_7300A serials
+
+
+**** Miscellaneous ****
+ * For cPCI-9116, add more delay for the status checking of FPGA downloading
+
+ * For PCI-9111 Rev.A3, additional code is added for the AutoScan operation
+
+
+-----------------------------------------------------------------
+     PCIS-DASK/X 3.21 Release Notes
+-----------------------------------------------------------------
+
+**** PCIS-DASK/X 3.21 New Features (versus 3.20) ****
+
+The following new features are supported in PCIS-DASK 3.21 :
+
+ * Kernel 2.4.6 device modules supported
+ * Double buffered mode of about-triggered continuous AI is now
+   supported for cPCI-9116
+
+**** PCIS-DASK/X 3.21 Hardware Support ****
+
+PCIS-DASK 3.21 Linux version :
+ * PCI-6208A
+ * PCI-6208V/16V
+ * PCI-6308A
+ * PCI-6308V
+ * PCI-7200/cPCI-7200
+ * PCI-7230/cPCI-7230
+ * PCI-7233/PCI-7233H
+ * PCI-7234
+ * PCI-7248/cPCI-7248
+ * cPCI-7249R
+ * PCI-7250
+ * cPCI-7252
+ * PCI-7296
+ * PCI-7300A/cPCI-7300A
+ * PCI-7396/PCI-7348
+ * PCI-7432/cPCI-7432/cPCI-7432R
+ * PCI-7433/cPCI-7433/cPCI-7433R
+ * PCI-7434/cPCI-7434/cPCI-7434R
+ * PCI-8554
+ * PCI-9111
+ * PCI-9112/cPCI-9112
+ * PCI-9113
+ * PCI-9114
+ * cPCI-9116
+ * PCI-9118
+ * PCI-9812/10
+
+**** Miscellaneous bug fixes ****
+
+ * The system hang problem for repeatedly aborting DMA operation of
+   PCI-7300A/cPCI-7300A is fixed.
+
+ * Fix the bugs of PCI-7200 DI_ReadPort( ) and DI_ReadLine( )
+
+ * For all devices, fix the mechanism of PCI Registry modification.
+
+**** Miscellaneous ****
+
+Functions "AI_AsyncClear/DI_AsyncClear" return the data count in the
+circular buffer at the last cycle of double mode of data acquisition.
+Please refer to the PCIS-DASK function reference manual for the details.
+
+-----------------------------------------------------------------
+     PCIS-DASK/X 3.20 Release Notes
+-----------------------------------------------------------------
+**** PCIS-DASK/X 3.20 New Features (versus 3.02) ****
+
+The following new features are supported in PCIS-DASK 3.20 :
+
+ * Driver for new NuDAQ card, cPCI-9116 supports
+ * Multi-buffered mode of continuous DI is now supported for
+   PCI-7300A/cPCI-7300A
+ * AUXDI0/Timer2 interrupt control for PCI-7300A/cPCI-7300A
+   is supported
+ * add the binary modules for Linux 2.2.18/2.4.2 and the kernel-version
+   checking in installation script
+ * add request_region / release_region for all devices, that will provide
+   information of I/O port in /proc/ioports
+
+**** PCIS-DASK/X 3.20 Hardware Support ****
+
+ * PCI-6208A
+ * PCI-6208V/16V
+ * PCI-6308A
+ * PCI-6308V
+ * PCI-7200/cPCI-7200
+ * PCI-7230/cPCI-7230
+ * PCI-7233/PCI-7233H
+ * PCI-7234
+ * PCI-7248/cPCI-7248
+ * cPCI-7249R
+ * PCI-7250
+ * cPCI-7252
+ * PCI-7296
+ * PCI-7300A/cPCI-7300A
+ * PCI-7396/PCI-7348
+ * PCI-7432/cPCI-7432/cPCI-7432R
+ * PCI-7433/cPCI-7433/cPCI-7433R
+ * PCI-7434/cPCI-7434/cPCI-7434R
+ * PCI-8554
+ * PCI-9111
+ * PCI-9112/cPCI-9112
+ * PCI-9113
+ * PCI-9114
+ * cPCI-9116
+ * PCI-9118
+ * PCI-9812/10
+ * cPCI-9812/10
+
+**** PCIS-DASK/X 3.20 New Functions ****
+
+The following new functions are added to PCIS-DASK 3.20
+
+ 1. AI configuration function:
+    * AI_9116_Config
+    * AI_9116_CounterInterval
+
+ 2. Asynchronous Multi-buffered Continuous Digital Input Functions
+    * DI_ContMultiBufferSetup
+    * DI_ContMultiBufferStart
+    * DI_AsyncMultiBufferNextReady
+
+ 3. One-Shot Digital Output Function:
+    * DO_WriteExtTrigLine
+
+ 4. Local Interrupt Setting Functions:
+    * DIO_7300SetInterrupt
+
+ 5. General-purpose Timer/Counter functions:
+    * GCTR_Setup
+    * GCTR_Clear
+    * GCTR_Read
+
+**** Miscellaneous bug fixes ****
+
+ * The data remained in the FIFO of PCI-7200 are all read out after
+   the abortion of DMA operation.
+ * It is now fixed that the FIFO of PCI-7300A_RevA and PCI-7300A_RevB
+   isn't cleared after sync. mode of DO operation.
+ * The system hang problem for very short time of sync. mode of
+   continuous DI of PCI-7300A/cPCI-7300A is fixed.
+ * The time gap between the finish of one block of data output and the
+   re-starting of the next block of data output for PCI-7300A/cPCI-7300A
+   is eliminated.
+ * Fix the "memory consuming" bug for PCI-6208, 6308, 7296, 7432 and 7434.
+   ( reported by Leonid Didkovsky <loenid@bbso.njit.edu> )
+ * Fix the bug of "non-quadruple word" operation for HandShake mode.
+   ( reported by PETER.A <PETER.A@amplicon.co.uk> )
+
+**** Miscellaneous ****
+
+Function "GetActualRate" produces the actual sampling rate the hardware
+will perform corresponding to the board type and the rate you want.
+
+Function "DO_WriteExtTrigLine" controls the output trigger signal for
+the O_TRG pin of PCI-7200.
+
+-----------------------------------------------------------------
+     PCIS-DASK/X 3.02 Release Notes
+-----------------------------------------------------------------
+
+**** PCIS-DASK/X 3.02 Hardware Support ****
+
+ * PCI-6208A
+ * PCI-6208V/16V
+ * PCI-6308A
+ * PCI-6308V
+ * PCI-7200/cPCI-7200
+ * PCI-7230/cPCI-7230
+ * PCI-7233/PCI-7233H
+ * PCI-7234
+ * PCI-7248/cPCI-7248
+ * cPCI-7249R
+ * PCI-7250
+ * cPCI-7252
+ * PCI-7296
+ * PCI-7300A/cPCI-7300A
+ * PCI-7396
+ * PCI-7432/cPCI-7432/cPCI-7432R
+ * PCI-7433/cPCI-7433/cPCI-7433R
+ * PCI-7434/cPCI-7434/cPCI-7434R
+ * PCI-8554
+ * PCI-9111
+ * PCI-9112/cPCI-9112
+ * PCI-9113
+ * PCI-9114
+ * PCI-9118
+ * PCI-9812/10
+ * cPCI-9812/10
+
+**** Miscellaneous Bug Fixs ****
+ * Fix the incompatible argument for mmap() ( GLIBC 2.1.3 )
+   modify the 'offset' parameter for mmap()
+   ( reported by Ilja Rauhut <rauhut@alwa02.physik.uni-siegen.de> )
+
+-----------------------------------------------------------------
+     PCIS-DASK/X 3.01 Release Notes
+-----------------------------------------------------------------
+
+**** PCIS-DASK/X 3.01 Hardware Support ****
+
+ * PCI-6208A
+ * PCI-6208V/16V
+ * PCI-6308A
+ * PCI-6308V
+ * PCI-7200/cPCI-7200
+ * PCI-7230/cPCI-7230
+ * PCI-7233/PCI-7233H
+ * PCI-7234
+ * PCI-7248/cPCI-7248
+ * cPCI-7249R
+ * PCI-7250
+ * cPCI-7252
+ * PCI-7296
+ * PCI-7300A/cPCI-7300A
+ * PCI-7396
+ * PCI-7432/cPCI-7432/cPCI-7432R
+ * PCI-7433/cPCI-7433/cPCI-7433R
+ * PCI-7434/cPCI-7434/cPCI-7434R
+ * PCI-8554
+ * PCI-9111
+ * PCI-9112/cPCI-9112
+ * PCI-9113
+ * PCI-9114
+ * PCI-9118
+ * PCI-9812/10
+ * cPCI-9812/10
+
+**** PCIS-DASK/X 3.01 New Functions ****
+The following new functions are added to PCIS-DASK/X 3.01
+ * GetActualRate
+
+**** Miscellaneous Bug Fixs ****
+ * Fix the bug of SYNC_MODE operation for PCI-7300A
+ * Add the __attribute__((packed)) to solve the alignment
+   problem of the variables by the gcc compiler.
+   (Thanks to Karsten Schmidt)
+
+-----------------------------------------------------------------
+     PCIS-DASK/X 3.00 Release Notes
+-----------------------------------------------------------------
+
+**** PCIS-DASK/X 3.00 New Features (versus 2.00) ****
+
+The following new features are supported in PCIS-DASK/X 3.00 :
+ * Device modules for new NuDAQ card, PCI-9112, support
+ * PCI-7348 now is supported as PCI-7396 compatible device
+ * Add SMP-kernel checking in install script
+ * Add optional argument for installaltion script to indicate the
+   installed-directory
+
+**** PCIS-DASK/X 3.00 Hardware Support ****
+
+ * PCI-6208A
+ * PCI-6208V/16V
+ * PCI-6308A
+ * PCI-6308V
+ * PCI-7200/cPCI-7200
+ * PCI-7230/cPCI-7230
+ * PCI-7233/PCI-7233H
+ * PCI-7234
+ * PCI-7248/cPCI-7248
+ * cPCI-7249R
+ * PCI-7250
+ * cPCI-7252
+ * PCI-7296
+ * PCI-7300A/cPCI-7300A
+ * PCI-7396/PCI-7348
+ * PCI-7432/cPCI-7432/cPCI-7432R
+ * PCI-7433/cPCI-7433/cPCI-7433R
+ * PCI-7434/cPCI-7434/cPCI-7434R
+ * PCI-8554
+ * PCI-9111
+ * PCI-9112/cPCI-9112
+ * PCI-9113
+ * PCI-9114
+ * PCI-9118
+ * PCI-9812/10
+ * cPCI-9812/10
+
+**** PCIS-DASK/X 3.00 New Functions ****
+
+The following new functions are added to PCIS-DASK/X 3.00
+ * AI_9112_Config
+ * AO_9112_Config
+
+
+**** Miscellaneous Bug Fixs ****
+
+ * Add additional check for unexpected characters in pcidask.conf
+ * Fix the format bug in header file for g++ compiler
+ * Modify the Locked Memory checking with the kernel-export functions
+ * Fix the bug of PCI Data writing back that is caused by
+   'pci_write_config_word' function
+ * Clear FIFO for PCI-7300 even if the DMA operation is interrupted
+ * Fix the bug of Scan Number in write_header_to_file for PCI-9812
+
+
+-----------------------------------------------------------------
+     PCIS-DASK/X 2.00 Release Notes
+-----------------------------------------------------------------
+
+
+**** PCIS-DASK/X 2.00 New Features (versus 1.00) ****
+
+The following new features are supported in PCIS-DASK/X 2.00 :
+ * More device modules support for Linux kernel 2.2.x
+ * Device modules for new NuDAQ cards, PCI-7300A, PCI-7300B, PCI-8554,
+   PCI-9113, PCI-9114, PCI-9118 and PCI-9812, support
+ * Provide interrupt asynchronouse notification
+ * Add the data file format conversion utility
+
+**** PCIS-DASK/X 2.00 Hardware Support ****
+
+ * PCI-6208A
+ * PCI-6208V/16V
+ * PCI-6308A
+ * PCI-6308V
+ * PCI-7200/cPCI-7200
+ * PCI-7230/cPCI-7230
+ * PCI-7233/PCI-7233H
+ * PCI-7234
+ * PCI-7248/cPCI-7248
+ * cPCI-7249R
+ * PCI-7250
+ * cPCI-7252
+ * PCI-7296
+ * PCI-7300A/cPCI-7300A
+ * PCI-7396
+ * PCI-7432/cPCI-7432/cPCI-7432R
+ * PCI-7433/cPCI-7433/cPCI-7433R
+ * PCI-7434/cPCI-7434/cPCI-7434R
+ * PCI-8554
+ * PCI-9111
+ * PCI-9113
+ * PCI-9114
+ * PCI-9118
+ * PCI-9812/10
+ * cPCI-9812/10
+
+**** PCIS-DASK/X 2.00 New Functions ****
+
+The following new functions are added to PCIS-DASK/X 2.00
+
+
+ 1. AI configuration functions:
+    * AI_9113_Config
+    * AI_9114_Config
+    * AI_9118_Config
+    * AI_9812_Config
+
+ 2. DI configuration functions:
+    * DI_7300A_Config
+    * DI_7300B_Config
+    * DI_7200_Config
+
+ 3. DO configuration functions:
+    * DO_7300A_Config
+    * DO_7300B_Config
+    * DO_7200_Config
+
+ 4. Pattern Generation DO functions:
+    * DO_PGStart
+    * DO_PGStop
+
+ 5. DIO interrupt configuration functions:
+    * DIO_SetDualInterrupt
+    * DIO_SetCOSInterrupt
+
+ 6. 8554 Clock configuration functions
+    * CTR_8554_CK1_Config
+    * CTR_8554_ClkSrc_Config
+    * CTR_8554_Debounce_Config
+
+ 7. Asynchronous Digital functions:
+    * DI_AsyncCheck
+    * DI_AsyncClear
+    * DO_AsyncCheck
+    * DO_AsyncClear
+
+ 8. Asynchronous Double-Buffered functions:
+    * DI_AsyncDblBufferHalfReady
+    * DI_AsyncDblBufferMode
+    * DI_AsyncDblBufferTransfer
+    * DO_InitialMemoryAllocated
+    * DI_InitialMemoryAllocated
+
+ 9. Continuous Data Acquisition functions:
+    * DI_ContStatus
+    * DI_ContReadPort
+    * DO_ContStatus
+    * DO_ContWritePort
+    * DI_ContReadPortToFile
+    * AI_ContReadChannelToFile
+    * AI_ContScanChannelsToFile
+    * AI_ContReadMultiChannelsToFile
+
+**** Miscellaneous ****
+
+The data file format conversion utility, DAQCvt, is now supported by
+PCIS-DASK 2.00 Linux version.
+
+
+-----------------------------------------------------------------
+     ACKNOWLEDGEMENTS
+-----------------------------------------------------------------
+
+Acknowledgements and general thanks to:
+        * Linus Torvalds and the entire GNU/Linux community for creating
+          all this wonderful software, and then just giving it away.
+        * Karsten Schmidt for solving the alignment problem of the
+          variables caused by the gcc compiler.
+

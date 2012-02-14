@@ -1,0 +1,198 @@
+/*----------------------------------------------------------------------------*/
+/* Company : ADLINK                                                           */
+/* Date    : 2009/06/09                                                       */
+/*                                                                            */
+/* This sample performs DI pattern match functionality.                       */
+/* In PCIe-7350, there are 32 programmable DIO channels. Each 8 channels are  */
+/* devided into one port that is the DIO configuration unit.                  */
+/* You can set a pattern for the set DI channels. Internal interrupt will be  */
+/* asserted while the input digital signal is matched to the configured       */
+/* pattern.                                                                   */
+/* AFI port can also be set as the COS event out mode, and the set AFI port   */
+/* will generate a pulse while COS occurs.                                    */
+/*----------------------------------------------------------------------------*/
+#include <stdio.h>
+#include <unistd.h>
+#include <stdlib.h>
+#include "conio.h"
+#include "dask.h"
+
+I16 card;
+U32 PMLData;
+U32 Counter=0;
+
+#define MATCH_PATTERN_PRE 0x1d
+#define MATCH_PATTERN_NEW 0x24
+
+void sig_handler(int signo)
+{
+	I16 err = DIO_GetPMLatchData32(card, 0, &PMLData);
+	if(err<0){
+		printf("DIO_GetPMLatchData32 Error: %d\n", err);
+	}
+	printf("Pattern Matched; Latched Data: 0x%lx\n\n", PMLData);
+	/*
+	* PCI-7350 Pattern Match is a one pulse event, so reconfigure
+	* and restart is necessary if you want to match a new pattern.
+	*/
+	//Set DI to zero
+	DO_WritePort(card, P7350_DIO_A, 0);
+ 	//Restart Pattern Match
+  	err = DIO_PMControl(card, 0, PATMATCH_RESTART, sig_handler);
+	if(err<0){
+		printf("DIO_PMControl Error: %d\n", err);
+	}
+}
+
+
+int main(int argc, char **argv)
+{
+    I16 err;
+    U16 card_num;
+    U32 vi;
+    U32 DIRead;
+    //BOOLEAN fStop;
+    U16 pattern_pre = MATCH_PATTERN_PRE;
+    U16 pattern_new = MATCH_PATTERN_NEW;
+    U16 PM_ChnType;
+    U8 pat_pre, pat_new;
+    U32 PMEventOutLen = 100; //100 system clock - 100 * 8 ns
+
+    printf("This sample performs pattern match (edge mode) functionality.\n");
+    printf("DIO Port A is configured as a DO port while Port B\n");
+    printf("is configured as a DI Port. Signal will be asserted\n");
+    printf("and a %ld ns pulse will be generated to AFI0 while\n", 8*PMEventOutLen);
+    printf("the set pattern is matched.\n");
+    printf("This sample will match the pattern while Port B is changed\n");
+    printf("from 0x%x to 0x%x.\n", pattern_pre, pattern_new);
+
+    printf("Card Number? ");
+    scanf(" %hd", &card_num);
+
+    /*Open and Initialize Device*/
+    card = Register_Card(PCI_7350, card_num);
+    if(card<0){
+        printf("Register_Card Error: %d\n", card);
+        exit(1);
+    }
+
+    /*Configure 7350 DIO Port*/
+    err = DIO_PortConfig(card, P7350_DIO_A, OUTPUT_PORT);
+    if(err<0){
+        printf("DIO_PortConfig Port_A Error: %d\n", err);
+        Release_Card(card);
+        exit(1);
+    }
+    err = DIO_PortConfig(card, P7350_DIO_B, INPUT_PORT);
+    if(err<0){
+        printf("DIO_PortConfig Port_B Error: %d\n", err);
+        Release_Card(card);
+        exit(1);
+    }
+
+    DO_WritePort(card, P7350_DIO_A, 0);
+    usleep(1000);
+
+    /*
+     * Configure Pattern Match
+     */
+    for(vi=8; vi<16; vi++){
+        /*Port B: Channel 8~15*/
+        pat_pre = ((pattern_pre>>(vi-8))&0x1);
+        pat_new = ((pattern_new>>(vi-8))&0x1);
+        if((pat_pre==0)&&(pat_new==0))
+            PM_ChnType = PATMATCH_Level_L;
+        else if((pat_pre==1)&&(pat_new==1))
+            PM_ChnType = PATMATCH_Level_H;
+        else if((pat_pre==0)&&(pat_new==1))
+            PM_ChnType = PATMATCH_Edge_R;
+        else
+            PM_ChnType = PATMATCH_Edge_F;
+        err = DIO_PMConfig(card, vi, PATMATCH_CHNEnable, PM_ChnType);
+        if(err<0){
+            printf("DIO_PMConfig Error: %d\n", err);
+            Release_Card(card);
+            exit(1);
+        }
+    }
+
+    /*
+     * Start Pattern Match
+     */
+    err = DIO_PMControl(card, 0, PATMATCH_START, sig_handler);
+    if(err<0){
+        printf("DIO_PMControl Error: %d\n", err);
+        Release_Card(card);
+        exit(1);
+    }
+
+    /*
+     * Set PM event out to AFI port
+     */
+    err = DIO_7350_AFIConfig(card, P7350_AFI_0, 1, P7350_AFI_PMTrigOut, PMEventOutLen);
+    if(err<0){
+        printf("DIO_7350_AFIConfig Port_A Error: %d\n", err);
+        Release_Card(card);
+        exit(1);
+    }
+
+    do{
+        /*
+         * DO output to Port A/C
+         */
+        //printf("Output Data? \n");
+        //scanf(" %lx", &vi);
+		usleep(1000000);
+		clrscr();
+    printf("This sample performs pattern match (edge mode) functionality.\n");
+    printf("DIO Port A is configured as a DO port while Port B\n");
+    printf("is configured as a DI Port. Signal will be asserted\n");
+    printf("and a %ld ns pulse will be generated to AFI0 while\n", 8*PMEventOutLen);
+    printf("the set pattern is matched.\n");
+    printf("This sample will match the pattern while Port B is changed\n");
+    printf("from 0x%x to 0x%x.\n\n\n", pattern_pre, pattern_new);
+		if(Counter%3==0)
+			vi = 0;
+		else if(Counter%3==1)
+			vi = 29;
+		else
+			vi = 36;
+        DO_WritePort(card, P7350_DIO_A, vi&0xff);
+	usleep(1000);
+        DI_ReadPort(card, P7350_DIO_B, &DIRead);
+        printf("Write to Port A: 0x%lx; Read from Port B: 0x%lx;\n\n\n", vi&0xff, DIRead);
+		Counter++;
+        printf("Press ENTER to Quit.\n");
+        //fStop = getch();
+    }while(!kbhit()/*(fStop!='q')&&(fStop!='Q')*/);
+
+    /*
+     * Stop Pattern Match
+     */
+    err = DIO_PMControl(card, 0, PATMATCH_STOP, NULL);
+    if(err<0){
+        printf("DIO_PMControl Error: %d\n", err);
+        Release_Card(card);
+        exit(1);
+    }
+
+    for(vi=8; vi<16; vi++){
+        /*Port B: Channel 8~15*/
+        err = DIO_PMConfig(card, vi, PATMATCH_CHNDisable, 0);
+        if(err<0){
+            printf("DIO_PMConfig Error: %d\n", err);
+            Release_Card(card);
+            exit(1);
+        }
+    }
+
+    err = DIO_7350_AFIConfig(card, P7350_AFI_0, 0, 0, 0);
+    if(err<0){
+        printf("DIO_7350_AFIConfig Error: %d\n", err);
+    }
+
+    //printf("\nPress any key to exit...\n");
+    //getch();
+    Release_Card(card);
+    return 0;
+}
